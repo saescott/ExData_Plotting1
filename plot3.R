@@ -45,3 +45,7 @@ lines(hpc2$Sub_metering_3~hpc2$date.time,col="blue")
 ## Apply Legend
 legend("topright", col=c("black", "red", "blue"), lwd=c(1,1,1), 
        c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+
+## Create .png file 
+dev.copy(png, file="plot3.png", width=480, height=480)
+dev.off()
