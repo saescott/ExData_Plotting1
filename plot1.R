@@ -39,3 +39,7 @@ hpc2 <- cbind(date.time, hpc1)
 
 ## Plot Histogram
 hist(hpc2$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
+
+## Create .png file 
+dev.copy(png, file="plot1.png", width=480, height=480)
+dev.off()
