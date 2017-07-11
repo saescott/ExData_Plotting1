@@ -39,3 +39,7 @@ hpc2 <- cbind(date.time, hpc1)
 
 ## Plot Line Chart
 plot(hpc2$date.time, hpc2$Global_active_power, type = "l", xlab="", ylab= "Global Avtive Power (kilowats)")
+
+## Create .png file 
+dev.copy(png, file="plot2.png", width=480, height=480)
+dev.off()
